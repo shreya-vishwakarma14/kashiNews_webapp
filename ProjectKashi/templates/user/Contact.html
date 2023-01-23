@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block Content %}
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <form class="form-control text-light mb-2" style="background:black; border:4px solid #f6ed9b;box-shadow:2px 2px 4px 4px black;">
+                {% csrf_token %}
+            <h2 class="text-center" style="color:#f6ed9b;">Contact Us Form </h2>
+                Name : <input type="text" name="name" placeholder="Name" class="w-100 form-control"><br/>
+                Email Id : <input type="email" name="email" placeholder="Email ID" class="form-control w-100"><br/>
+                Mobile Number :<input type="number" name="number" placeholder="Mobile No."
+                                      class="form-control w-100 color"><br/>
+                DOB : <input type="date" name="dob" placeholder="Date of birth" class="form-control w-100"><br/>
+                Password : <input type="password" placeholder="alphabat,*,223,@#" name="password"
+                                  class="form-control w-100"><br/>
+                ConfirmPassword : <input type="password" placeholder="alphabat,*,223,@#" name="conformPassword"
+                                         class=" form-control w-100"><br/>
+                <input type="submit" value="Submit" class="form-control w-100 bg-primary text-light">
+        </form>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+{% endblock %}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>काशीNeWs</title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <link href="{% static 'css/all.css' %}" rel="stylesheet">
+    <link rel="icon" href="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/50/000000/external-temple-wonder-of-the-world-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-2.png"
+    type="image/x-icon">
+</head>
+<style>
+.row1{
+        max-height:100px;
+        background:black;
+    }
+.row2{
+        background:black;
+    }
+
+
+.search1{
+        margin-left:50px;
+        width:300px;
+        padding-top:10px;
+    }
+.font{
+        color:#f6ed9b;
+        margin-left:20px;
+        margin-top:20px;
+    }
+.over:hover{
+        border:1px solid black;
+        background:goldyellow;
+        transition: all ease 0.5;
+        border-radius:5px 5px 5px 5px;
+        height:35px;
+        margin-top:3px;
+    }
+.img{
+        transition: transform 0.2s ease;
+        box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+        border-radius: 0;
+        border: 0;
+        margin-bottom: 1.5em;
+    }
+.img1:hover{
+        transform: scale(1.1);
+        transition: all ease 0.5;
+        border-radius:5px;
+    }
+.footer{
+        background:rgba(0,0,0,0.5);
+    }
+.nasa1{
+    background:rgba(0,0,0,0.2);
+}
+.img2{
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    .text-color {
+    color: #f6ed9b;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.outer
+{
+    background:black;
+
+}
+.a
+{
+    font-size:35px;
+    height:50px;
+    background:gold;
+    color:white;
+}
+.b
+{
+
+    background:#f6ed9b;
+    border-radius:8px;
+}
+.c
+{
+
+    box-sizing: border-box;
+    padding-top:20px;
+}
+.marquee{
+    margin-right:35px;
+    height:100px;
+    width:200px;
+    border-radius:5px;
+}
+.generation{
+    height:300px ;
+    width: 420px;
+    border:2px solid white;
+    padding:10px;
+    box-shadow:2px 2px 4px 2px white;
+    transition: 1s ease;
+    transition: 1s ease;
+}
+
+.generation:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+.nasa{
+    border:5px solid black;
+    padding:10px ;
+    box-shadow:2px 2px 4px 2px white;
+    background:url(https://scitechdaily.com/images/SLS-in-Block-1-Cargo-Configuration-Inside-VAB-768x1024.jpg);
+}
+.nasa1{
+    border:5px solid black;
+    padding:10px ;
+    box-shadow:2px 2px 4px 2px white;
+    background:url(https://scitechdaily.com/images/Dotsero-Volcano-777x583.jpg);
+}
+.medicine{
+    border:5px solid black;
+    padding:10px ;
+    box-shadow:2px 2px 4px 2px white;
+    background:url(https://scitechdaily.com/images/Germinating-Pine-Cone-777x502.jpg);
+}
+.medicine1{
+    border:5px solid black;
+    padding:10px ;
+    box-shadow:2px 2px 4px 2px white;
+    background:url(https://scitechdaily.com/images/3D-Printed-Sand-Bridge-777x621.jpg);
+}
+.climate{
+    border:5px solid black;
+    padding:10px ;
+    box-shadow:2px 2px 4px 2px white;
+    background:url(https://www.sciencenews.org/wp-content/uploads/2021/11/111821_jl_carbon_feat-1030x580.jpg);
+}
+.climate1{
+    border:5px solid black;
+    padding:10px ;
+    box-shadow:2px 2px 4px 2px white;
+    background:url(https://www.science.org/do/10.1126/science.acx9669/full/_20211119_nib_kiribati.jpg);
+    background-repeat:no-repeat;
+}
+.Bitcoin{
+    height:300px ;
+    width: 420px;
+    border:2px solid white;
+    margin-top:100px;
+    padding:10px;
+    border-radius:50%;
+    box-shadow:2px 2px 4px 2px white;
+    transition: 1s ease;
+    transition: 1s ease;
+}
+
+.Bitcoin:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+.processor{
+    border:2px solid white;
+    margin-top:10px;
+    text-align:justify;
+    box-shadow:2px 2px 2px 2px white;
+}
+</style>
+<body>
+<!-- header starting--->
+<div class="container-fluid">
+    <div class="row row1">
+        <div class="col-sm-9">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background:black; color:#f6ed9b;">
+                <div class="container-fluid" style="background:#f6ed9b;border-radius:5px 5px 5px 5px;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item over" style="padding-left:20px;">
+                                <a class="nav-link active" aria-current="page" href="/user/">Home</a>
+                            </li>
+                            <li class="nav-item over" style="padding-left:20px;">
+                                <a class="nav-link active" href="/user/About/">About</a>
+                            </li>
+                            <li class="nav-item over" style="padding-left:20px;">
+                                <a class="nav-link active" href="/user/Kashi/">Kashi</a>
+                            </li>
+                            <li class="nav-item over" style="padding-left:20px;">
+                                <a class="nav-link active" href="/user/StudentLearning">Student_Learning</a>
+                            </li>
+                            <li class="nav-item over">
+                                <a class="nav-link active" href="/user/Ghat/">Ghat</a>
+                            </li>
+
+                            <li class="nav-item over">
+                                <a class="nav-link active" href="/user/Contact">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-sm-3">
+            <center>
+                <i class="fab fa-facebook font"></i>
+                <i class="fab fa-instagram font"></i>
+                <i class="fab fa-whatsapp font"></i>
+                <i class="fab fa-telegram font"></i>
+                <i class="fab fa-youtube font"></i>
+                <i class="fab fa-github font"></i></center>
+        </div>
+    </div>
+    <div class="row row2">
+        <div class="col-sm-5">
+            <img src="{% static 'images/logo.png' %}" class="img-fluid" alt="Responsive image" style="height:200px; width:450px;">
+        </div>
+        <div class="col-sm-7">
+            <center><br><b style="color:#f6ed9b;">उत्तर प्रदेश की काशी पवित्रता इसकी रूह हैं,<br><br>
+                जिस्म इसकी संस्कृति श्रृंगार इसका सुकून हैं,<br><br>
+                घाटो से संवरती है ये लहरों से निखरती हैं,<br><br>
+                महादेव के आशीर्वाद से ये नगरी हर पल चमकती हैं
+            </b></center>
+        </div>
+    </div>
+    <!-- Header Ending---->
+</div>
+
+{% block Content %}
+{% endblock %}
+
+
+<!-- Footer starting---->
+<div class="container-fluid img2" style="background-image:url(https://www.andbeyond.com/wp-content/uploads/sites/5/sarnath-india-varanasi-boat-ride.jpg);">
+    <div class="row footer bg-image">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3">
+            <h3 class=" pt-2 text-center" style="border-bottom:1px solid white; color:white;">CONTACT</h3>
+            <b class="text-light">Building No. : B3/13</b><br>
+            <b class="text-light">Location : Near Kashi Vidhyapith</b><br><br>
+            <b class="text-light">City : Varanasi</b><br><br>
+            <b class="text-light">State : Uttar Pradesh</b><br><br>
+            <b class="text-light">Zip Code : 221010</b><br>
+            <b class="text-light">Contact No. : +91-8870658741</b>
+        </div>
+        <div class="col-sm-2">
+            <h3 class="text-light pt-2 text-center" style="border-bottom:1px solid white;">MENU</h3>
+            <center>
+                <a href="/user/home/"> <b class="text-light">Home</b><br></a>
+                <b class="text-light">About</b><br>
+                <b class="text-light">Kashi</b><br>
+                <b class="text-light">Student_Learning</b><br>
+                <b class="text-light">Ghat</b><br>
+                <b class="text-light">Places</b><br>
+                <b class="text-light">Contact</b>
+            </center>
+        </div>
+        <div class="col-sm-3">
+            <h3 class="text-light pt-2 text-center" style="border-bottom:1px solid white;">RECENT POSTS</h3>
+            <ul>
+                <li class="text-light"><b><a href="http://bitly.ws/hrQj" class="text-light"
+                                             style="text-decoration: none;">वाराणसीः यूपी कॉलेज के
+                    विद्यार्थियों ने किया धरना-प्रदर्शन, आईसीएआर से एक्रिडेशन कराने की मांग</a></b></li>
+                <li class="text-light pt-2"><b><a href="http://bitly.ws/hrQC" class="text-light"
+                                                  style="text-decoration: none;">वाराणसी: बास्केटबॉल
+                    खिलाड़ी प्रशांति को प्रधान मुख्य आयकर आयुक्त ने किया सम्मानित, बताया देश का गौरव</a></b></li>
+                <li class="text-light pt-2"><b><a href="http://bitly.ws/hrQw" class="text-light"
+                                                  style="text-decoration: none;">वाराणसी: दीपावली से
+                    पहले यातायात व्यवस्था को मिलेगी संजीवनी, सलारपुर और कालिका धाम पुल का पीएम करेंगे लोकार्पण</a></b>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <h4 class="text-light pt-5 text-center">
+                <mark>&copy; Copyright KashiNews</mark>
+            </h4>
+            <p class="text-light pt-3 text-center" style="text-size:40px;">
+                <mark>MadeBy : <b>Shreya Vishwakarma</b></mark>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
